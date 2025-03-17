@@ -36,7 +36,7 @@ Dự án sử dụng các thư viện cần thiết cho Redis và Spring Cache.
 
 ##  Chạy Dự Án  
 
-- Khởi động Redis server bằng Docker hoặc cài đặt thủ công.  
+- Khởi động Redis server bằng Docker. 
 - Chạy ứng dụng Spring Boot.  
 - Gửi request đến API để kiểm tra cache.  
 
