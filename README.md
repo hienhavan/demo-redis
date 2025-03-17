@@ -20,7 +20,7 @@ Dự án sử dụng các thư viện cần thiết cho Redis và Spring Cache.
   - Định nghĩa thời gian sống của cache (TTL).  
   - Cấu hình kiểu serialization cho dữ liệu cache.
 
-⏳ **Lưu ý:**  
+ **Lưu ý:**  
 - Nếu **KHÔNG** dùng `GenericJackson2JsonRedisSerializer`, dữ liệu cache sẽ lưu dưới dạng **Java Serialization** (không đọc được trực tiếp).  
 
 ##  Controller & Service  
@@ -30,7 +30,7 @@ Dự án sử dụng các thư viện cần thiết cho Redis và Spring Cache.
 - Sử dụng `key` động dựa vào tham số đầu vào.  
 - Nếu dữ liệu có trong cache, nó sẽ được trả về ngay mà không cần gọi service bên ngoài.  
 
-🛠 **Lưu ý quan trọng:**  
+ **Lưu ý quan trọng:**  
 - **@Cacheable** chỉ áp dụng với phương thức **không thay đổi dữ liệu**.  
 - Nếu có logic cập nhật, cần sử dụng **@CachePut** hoặc **@CacheEvict** để làm mới dữ liệu trong cache.  
 
